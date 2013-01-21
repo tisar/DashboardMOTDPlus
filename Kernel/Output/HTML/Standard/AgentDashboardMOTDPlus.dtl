@@ -1,0 +1,12 @@
+# --
+# AgentMOTDPlus.dtl - Displays StdResponse as MOTD for global dashboard
+# Copyright (C) 2010 Daniel Obée
+# --
+# $Id:
+# --
+# This software comes with ABSOLUTELY NO WARRANTY. For details, see
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
+# --
+
+<p>$Data{"Response"}</p>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_package version="1.0">
+    <Name>Dashboard MOTD Plus</Name>
+    <Version>0.0.2</Version>
+    <Framework>2.4.x</Framework>
+    <Vendor>Daniel Obee</Vendor>
+    <URL>http://myhammer.de/</URL>
+    <License>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</License>
+    <ChangeLog Version="0.0.2" Date="2010-07-23 09:47:00">Fixed bug that caused crash of dashboard. Set default Response to 1.</ChangeLog>
+    <ChangeLog Version="0.0.1" Date="2010-07-22 16:17:51">Initial Release</ChangeLog>
+    <Description Lang="en">A way to use a StdResponse as MOTD in the Dashboard.</Description>
+    <Description Lang="de">Eine Möglichkeit, eine StdResponse als MOTD im Dashboard anzuzeigen.</Description>
+    <BuildDate>?</BuildDate>
+    <BuildHost>?</BuildHost>
+    <Filelist>
+        <File Permission="644" Location="Kernel/Config/Files/DashboardMOTDPlus.xml"></File>
+        <File Permission="644" Location="Kernel/Output/HTML/Standard/AgentDashboardMOTDPlus.dtl"></File>
+        <File Permission="644" Location="Kernel/Output/HTML/DashboardMOTDPlus.pm"></File>
+    </Filelist>
+</otrs_package>
