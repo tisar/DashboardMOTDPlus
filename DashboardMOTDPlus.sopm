@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.0">
-    <Name>Dashboard MOTD Plus</Name>
+    <Name>DashboardMOTDPlus</Name>
     <Version>0.0.2</Version>
     <Framework>2.4.x</Framework>
     <Vendor>Daniel Obee</Vendor>
