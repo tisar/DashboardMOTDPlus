@@ -4,7 +4,7 @@
     <Version>0.0.2</Version>
     <Framework>2.4.x</Framework>
     <Vendor>Daniel Obee</Vendor>
-    <URL>http://myhammer.de/</URL>
+    <URL>http://33achtzig.de/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</License>
     <ChangeLog Version="0.0.2" Date="2010-07-23 09:47:00">Fixed bug that caused crash of dashboard. Set default Response to 1.</ChangeLog>
     <ChangeLog Version="0.0.1" Date="2010-07-22 16:17:51">Initial Release</ChangeLog>
