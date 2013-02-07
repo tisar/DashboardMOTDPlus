@@ -1,6 +1,6 @@
 DashboardMOTDPlus
 
-by Daniel Obée @ 33achtzig
+by Daniel Obee @ 33achtzig
 
 A simple module that allows to display the content of a standard response as Message of the Day in the OTRS dashboard.
 
