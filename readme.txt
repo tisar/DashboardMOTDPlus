@@ -15,4 +15,5 @@ OTRS Versions:
 3.0.x
 3.1.x
 3.2.x
+4.0.x
 
