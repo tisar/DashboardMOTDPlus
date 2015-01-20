@@ -9,4 +9,4 @@
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
-<p>$Data{"Response"}</p>
+<p>[% Data.Template %]</p>

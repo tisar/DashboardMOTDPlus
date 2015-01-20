@@ -16,8 +16,12 @@ use warnings;
 
 use Kernel::System::StandardResponse;
 
-use vars qw($VERSION);
-$VERSION = qw($Revision: 1.31 $) [1];
+our $VERSION = 1.1;
+
+our @ObjectDependencies = qw(
+    Kernel::Output::HTML::Layout
+    Kernel::System::StandardTemplate
+);
 
 sub new {
     my ( $Type, %Param ) = @_;
@@ -25,14 +29,6 @@ sub new {
     # allocate new hash for object
     my $Self = {%Param};
     bless( $Self, $Type );
-
-    # check all needed objects
-    for (qw(ParamObject LayoutObject ConfigObject)) {
-        if ( !$Self->{$_} ) {
-            $Self->{LayoutObject}->FatalError( Message => "Got no $_!" );
-        }
-    }
-    $Self->{StdResponseObject}   = Kernel::System::StandardResponse->new(%Param);
 
     return $Self;
 }
@@ -56,11 +52,13 @@ sub Run {
     
     my $ResponseID = $Self->{Config}->{ResponseID};
     
- 	my %MOTD = $Self->{StdResponseObject}->StandardResponseGet( ID => $ResponseID );
+    my %MOTD = $Kernel::OM->Get('Kernel::System::StandardTemplate')->StandardTemplateGet(
+        ID => $ResponseID,
+    );
 
     my $Content = $Self->{LayoutObject}->Output(
         TemplateFile => 'AgentDashboardMOTDPlus',
-        Data 		 => \%MOTD,
+        Data         => \%MOTD,
     );
 
     return $Content;
